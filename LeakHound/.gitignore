@@ -1,0 +1,76 @@
+# -----------------------------------------------------------------------------
+# 1. PYTHON-SPECIFIC IGNORES (Compiled Files, Environments, Logs)
+# -----------------------------------------------------------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller/py2exe
+*.exe
+*.heu
+*.log
+*.pyd
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.manifest
+
+# Virtual environments
+# NOTE: The *name* of your venv may vary (e.g., 'venv', '.venv', 'env').
+# Check your PyCharm settings and uncomment/adjust as needed.
+venv/
+.venv/
+env/
+/bin/
+/include/
+/lib/
+/lib64/
+
+# Jupyter Notebook files
+.ipynb_checkpoints
+
+# Unit test / coverage reports
+.coverage
+.nox/
+.tox/
+htmlcov/
+.pytest_cache/
+
+# Sensitive data/configuration
+# Always ignore sensitive files like API keys or environment variables!
+.env
+.flaskenv
+secrets.ini
+
+# -----------------------------------------------------------------------------
+# 2. PYCHARM / JETBRAINS SPECIFIC IGNORES
+# -----------------------------------------------------------------------------
+
+# PyCharm/JetBrains project configuration and data
+# This is the main directory for all IDE settings. It is usually ignored.
+.idea/
+
+# Local history files
+.history
+.LTM
+
+# Miscellaneous artifacts
+*.iml         # Module files
+*.ipr         # Project files
+*.iws         # Workspace files
+out/          # Common output directory

@@ -1,0 +1,173 @@
+%Contacts
+%The contentResolver will most likely track more than contacts, but that can be complimented with further information about the app
+<android.content.Context: android.content.ContentResolver getContentResolver()> -> _SOURCE_
+<android.provider.ContactsContract$Contacts: android.net.Uri CONTENT_URI> -> _SOURCE_
+<android.provider.ContactsContract$Contacts: android.net.Uri CONTENT_LOOKUP_URI> -> _SOURCE_
+<android.provider.ContactsContract$Contacts: android.net.Uri CONTENT_FILTER_URI> -> _SOURCE_
+<android.provider.ContactsContract$PhoneLookup: android.net.Uri CONTENT_FILTER_URI> -> _SOURCE_
+<android.provider.ContactsContract$Data: android.net.Uri CONTENT_URI> -> _SOURCE_
+<android.provider.ContactsContract$CommonDataKinds$Phone: android.net.Uri CONTENT_URI> -> _SOURCE_
+<android.provider.ContactsContract$CommonDataKinds$Phone: android.net.Uri CONTENT_FILTER_URI> -> _SOURCE_
+<android.provider.ContactsContract$CommonDataKinds$Phone: android.net.Uri ENTERPRISE_CONTENT_FILTER_URI> -> _SOURCE_
+<android.provider.ContactsContract$CommonDataKinds$Phone: android.net.Uri ENTERPRISE_CONTENT_URI> -> _SOURCE_
+<android.provider.ContactsContract$CommonDataKinds$Email: android.net.Uri CONTENT_URI> -> _SOURCE_
+<android.provider.ContactsContract$CommonDataKinds$Email: android.net.Uri CONTENT_FILTER_URI> -> _SOURCE_
+<android.provider.ContactsContract$CommonDataKinds$Email: android.net.Uri CONTENT_LOOKUP_URI> -> _SOURCE_
+<android.provider.ContactsContract$CommonDataKinds$Email: android.net.Uri ENTERPRISE_CONTENT_FILTER_URI> -> _SOURCE_
+<android.provider.ContactsContract$CommonDataKinds$Email: android.net.Uri ENTERPRISE_CONTENT_LOOKUP_URI> -> _SOURCE_
+<android.provider.ContactsContract$Profile: android.net.Uri CONTENT_URI> -> _SOURCE_
+<android.content.ContentResolver: void registerContentObserver(android.net.Uri, boolean, android.database.ContentObserver)> -> _SOURCE_
+
+%Location
+<android.location.Location: float bearingTo(android.location.Location)> -> _SOURCE_
+<android.location.Location: float distanceTo(android.location.Location)> -> _SOURCE_
+%<android.location.Location: void dump(android.util.Printer,java.lang.String)> -> _SINK_
+<android.location.Location: float getAccuracy()> -> _SOURCE_
+<android.location.Location: double getAltitude()> -> _SOURCE_
+<android.location.Location: float getBearing()> -> _SOURCE_
+<android.location.Location: float getBearingAccuracyDegrees()> -> _SOURCE_
+<android.location.Location: android.os.Bundle getExtras()> -> _SOURCE_
+<android.location.Location: double getLatitude()> -> _SOURCE_
+<android.location.Location: double getLongitude()> -> _SOURCE_
+<android.location.Location: float getMslAltitudeAccuracyMeters()> -> _SOURCE_
+<android.location.Location: double getMslAltitudeMeters()> -> _SOURCE_
+<android.location.Location: float getSpeed()> -> _SOURCE_
+<android.location.Location: float getSpeedAccuracyMetersPerSecond()> -> _SOURCE_
+<android.location.Location: long getTime()> -> _SOURCE_
+<android.location.Location: float getVerticalAccuracyMeters()> -> _SOURCE_
+<android.location.Location: int hashCode()> -> _SOURCE_
+%<android.location.Location: void writeToParcel(android.os.Parcel,int)> -> _SINK_
+
+%SMS
+<android.telephony.SmsManager: void sendDataMessage(java.lang.String,java.lang.String,short,byte[],android.app.PendingIntent,android.app.PendingIntent)> -> _SINK_
+<android.telephony.SmsManager: void sendMultimediaMessage(android.content.Context,android.net.Uri,java.lang.String,android.os.Bundle,android.app.PendingIntent)> -> _SINK_
+<android.telephony.SmsManager: void sendMultimediaMessage(android.content.Context,android.net.Uri,java.lang.String,android.os.Bundle,android.app.PendingIntent,long)> -> _SINK_
+<android.telephony.SmsManager: void sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.List,java.util.List,java.util.List,long)> -> _SINK_
+<android.telephony.SmsManager: void sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.ArrayList,java.util.ArrayList,java.lang.ArrayList)> -> _SINK_
+<android.telephony.SmsManager: void sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.List,java.util.List,java.util.List,java.lang.String,java.lang.String)> -> _SINK_
+<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent,long)> -> _SINK_
+<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)> -> _SINK_
+<android.telephony.SmsManager: void sendTextMessageWithoutPersisting(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)> -> _SINK_
+
+%Phone
+<android.telephony.TelephonyManager: java.lang.String getDeviceId()> android.permission.READ_PHONE_STATE -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getSubscriberId()> android.permission.READ_PHONE_STATE -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()> android.permission.READ_PHONE_STATE -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getLine1Number()> android.permission.READ_PHONE_STATE -> _SOURCE_
+
+%Sockets
+<java.net.Socket: void connect(java.net.SocketAddress)> -> _SINK_
+<java.net.Socket: void connect(java.net.SocketAddress,int)> -> _SINK_
+
+
+%URLConnection
+%<java.net.URLConnection: void connect()> -> _SINK_
+%<java.net.URLConnection: java.io.OutputStream getOutputStream()> -> _SINK_
+
+%OkHttp
+%<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)> -> _SINK_
+%<okhttp3.OkHttpClient$Builder: okhttp3.OkHttpClient$Builder addInterceptor(okhttp3.Interceptor)> -> _SINK_
+
+%Retrofit
+%<retrofit2.Retrofit: <T> T create(java.lang.Class<T>)> -> _SINK_
+%<retrofit2.Call: void enqueue(retrofit2.Callback)> -> _SINK_
+%<retrofit2.Retrofit$Builder: retrofit2.Retrofit$Builder baseUrl(java.lang.String)> -> _SINK_
+%<retrofit2.Retrofit$Builder: retrofit2.Retrofit build()> -> _SINK_
+%<retrofit2.Call: retrofit2.Response execute()> -> _SINK_
+
+%Volley
+%<com.android.volley.RequestQueue: com.android.volley.Request add(com.android.volley.Request)> -> _SINK_
+%<com.android.volley.toolbox.Volley: com.android.volley.RequestQueue newRequestQueue(android.content.Context)> -> _SINK_
+%<com.android.volley.toolbox.JsonObjectRequest: void deliverResponse(org.json.JSONObject)> -> _SINK_
+%<com.android.volley.toolbox.HttpHeaderParser: java.util.Map parseCacheHeaders(com.android.volley.NetworkResponse)> -> _SINK_
+
+%Ktor (io.ktor.client.okhttp)
+%<io.ktor.client.HttpClient: io.ktor.client.statement.HttpResponse get(java.lang.String)> -> _SINK_
+%<io.ktor.client.HttpClient: io.ktor.client.statement.HttpResponse post(java.lang.String)> -> _SINK_
+%<io.ktor.client.statement.HttpResponse: java.io.InputStream body()> -> _SINK_
+%<io.ktor.client.plugins.HttpCallValidator: void validateResponse(io.ktor.client.statement.HttpResponse)> -> _SINK_
+%<io.ktor.client.plugins.HttpCallValidator: void expectSuccess(io.ktor.client.statement.HttpResponse)> -> _SINK_
+
+%nv-websocket-client (com.neovisionaries:nv-websocket-client)
+%<com.neovisionaries.ws.client.WebSocket: void sendText(java.lang.String)> -> _SINK_
+%<com.neovisionaries.ws.client.WebSocket: void sendBinary(byte[])> -> _SINK_
+%<com.neovisionaries.ws.client.WebSocket: void sendPing(java.lang.String)> -> _SINK_
+%<com.neovisionaries.ws.client.WebSocket: com.neovisionaries.ws.client.WebSocket sendContinuation(java.lang.String)> -> _SINK_
+%<com.neovisionaries.ws.client.WebSocket: com.neovisionaries.ws.client.WebSocket sendContinuation(java.lang.String,boolean)> -> _SINK_
+
+%Fuel (com.github.kittinunf.fuel:fuel)
+%<com.github.kittinunf.fuel.core.Request: com.github.kittinunf.fuel.core.Response response()> -> _SINK_
+%<com.github.kittinunf.fuel.core.Request: void response(com.github.kittinunf.fuel.core.Handler)> -> _SINK_
+%<com.github.kittinunf.fuel.core.Request: com.github.kittinunf.fuel.core.Response awaitResponse()> -> _SINK_
+%<com.github.kittinunf.fuel.core.Request: void download(java.lang.String)> -> _SINK_
+
+
+%Java-WebSocket (org.java-websocket:Java-WebSocket)
+%<org.java_websocket.client.WebSocketClient: void send(java.lang.String)> -> _SINK_
+%<org.java_websocket.client.WebSocketClient: void send(byte[])> -> _SINK_
+%<org.java_websocket.client.WebSocketClient: void sendFrame(org.java_websocket.framing.Framedata)> -> _SINK_
+%<org.java_websocket.client.WebSocketClient: void sendFrame(java.util.Collection)> -> _SINK_
+
+%AppCenter (com.microsoft.appcenter)
+%<com.microsoft.appcenter.crashes.Crashes: void trackError(java.lang.Throwable)> -> _SINK_
+%<com.microsoft.appcenter.analytics.Analytics: void trackEvent(java.lang.String)> -> _SINK_
+%<com.microsoft.appcenter.analytics.Analytics: void trackEvent(java.lang.String,java.util.Map)> -> _SINK_
+
+%Firebase Analytics (com.google.firebase:firebase-analytics-ktx)
+%<com.google.firebase.analytics.FirebaseAnalytics: void logEvent(java.lang.String,android.os.Bundle)> -> _SINK_
+%<com.google.firebase.analytics.FirebaseAnalytics: void setUserProperty(java.lang.String,java.lang.String)> -> _SINK_
+%<com.google.firebase.analytics.FirebaseAnalytics: void setUserId(java.lang.String)> -> _SINK_
+%<com.google.firebase.analytics.FirebaseAnalytics: void setAnalyticsCollectionEnabled(boolean)> -> _SINK_
+
+%Intent
+%<android.content.Intent: void putExtra(java.lang.String,java.lang.String)> -> _SINK_
+%<android.content.Intent: void putExtra(java.lang.String,int)> -> _SINK_
+%<android.content.Intent: void putExtra(java.lang.String,boolean)> -> _SINK_
+%<android.content.Intent: void putExtras(android.os.Bundle)> -> _SINK_
+
+%Broadcast APIs
+%<android.content.Context: void sendBroadcast(android.content.Intent)> -> _SINK_
+%<android.content.Context: void sendBroadcast(android.content.Intent,java.lang.String)> -> _SINK_
+%<android.content.Context: void sendOrderedBroadcast(android.content.Intent,java.lang.String)> -> _SINK_
+%<android.content.Context: void sendOrderedBroadcast(android.content.Intent,java.lang.String,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)> -> _SINK_
+%<android.content.Context: void sendStickyBroadcast(android.content.Intent)> -> _SINK_
+%<android.content.Context: void sendStickyBroadcast(android.content.Intent,java.lang.String)> -> _SINK_
+%<android.content.Context: void sendStickyOrderedBroadcast(android.content.Intent,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)> -> _SINK_
+%<android.content.Context: void removeStickyBroadcast(android.content.Intent)> -> _SINK_
+%<android.content.Context: void removeStickyBroadcastAsUser(android.content.Intent,android.os.UserHandle)> -> _SINK_
+
+%Broadcast APIs for Android 12+ (Modern Versions)
+%<android.content.Context: void sendBroadcastAsUser(android.content.Intent,android.os.UserHandle)> -> _SINK_
+%<android.content.Context: void sendBroadcastAsUser(android.content.Intent,android.os.UserHandle,java.lang.String)> -> _SINK_
+%<android.content.Context: void sendStickyBroadcastAsUser(android.content.Intent,android.os.UserHandle)> -> _SINK_
+%<android.content.Context: void sendStickyOrderedBroadcastAsUser(android.content.Intent,android.os.UserHandle,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)> -> _SINK_
+
+%AdMob
+%<com.google.android.gms.ads.AdRequest$Builder: com.google.android.gms.ads.AdRequest build()> -> _SINK_
+%<com.google.android.gms.ads.AdLoader: void loadAd(com.google.android.gms.ads.AdRequest)> -> _SINK_
+%<com.google.android.gms.ads.AdLoader: void loadAd(com.google.android.gms.ads.AdManagerAdRequest)> -> _SINK_
+%<com.google.android.gms.ads.AdLoader: void loadAd(com.google.android.gms.ads.AdRequest,int)> -> _SINK_
+%<com.google.android.gms.ads.AdRequest$Builder: com.google.android.gms.ads.AdRequest$Builder setAdString(java.lang.String, java.lang.String)> -> _SINK_
+%<com.google.android.gms.ads.AdRequest$Builder: com.google.android.gms.ads.AdRequest$Builder addCustomTargeting(java.lang.String, java.lang.String)> -> _SINK_
+%<com.google.android.gms.ads.AdRequest$Builder: com.google.android.gms.ads.AdRequest$Builder addKeyword(java.lang.String)> -> _SINK_
+
+%Source and Sinks found during reverse Engineering
+
+%This one was used in https://f-droid.org/en/packages/org.woheller69.PeakOrama/ to load a canvas.html which would later request the information (Java Script)
+%<android.webkit.WebView: void loadUrl(java.lang.String)> -> _SINK_
+
+%Usage of sockets in some apps
+%<java.io.OutputStream: void write(byte[])> -> _SINK_
+%<java.io.OutputStream: void write(byte[],int,int)> -> _SINK_
+%<java.io.DataOutputStream: void writeUTF(java.lang.String)> -> _SINK_
+%<java.io.DataOutputStream: void writeInt(int)> -> _SINK_
+%<java.io.DataOutputStream: void write(byte[])> -> _SINK_
+%<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)> -> _SINK_
+%<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.HttpHost,org.apache.http.HttpRequest)> -> _SINK_
+
+%Database
+%<android.database.sqlite.SQLiteClosable: long insert(java.lang.String,java.lang.String,android.content.ContentValues)> -> _SINK_
+%<android.database.sqlite.SQLiteClosable: long insertOrThrow(java.lang.String,java.lang.String,android.content.ContentValues)> -> _SINK_
+%<android.database.sqlite.SQLiteClosable: long insertWithOnConflict(java.lang.String,java.lang.String,android.content.ContentValues,int)> -> _SINK_
+%<android.Content.ContentResolver: android.net.URI insert(android.net.URI,android.content.ContentValues)> -> _SINK_
+%<android.Content.ContentResolver: android.net.URI insert(android.net.URI,android.content.ContentValues,android.os.Bundle)> -> _SINK_
