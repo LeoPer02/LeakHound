@@ -1,0 +1,28 @@
+{
+    "device_info": {
+        "device": "emulator-5554",
+        "sim_operator": "T-Mobile",
+        "sim_operator_country": "us",
+        "timezone": "GMT",
+        "hardware": "ranchu",
+        "build_fingerprint": "google/sdk_gphone64_x86_64/emulator64_x86_64_arm64:12/SE1A.211212.001.B1/8023802:user/dev-keys",
+        "build_flavor": "sdk_gphone64_x86_64-user",
+        "build_host": "abfarm-01566",
+        "build_id": "SE1A.211212.001.B1",
+        "build_product": "emulator64_x86_64_arm64",
+        "build_tags": "release-keys",
+        "build_type": "user",
+        "build_user": "android-build",
+        "build_description": "sdk_gphone64_x86_64-user 12 SE1A.211212.001.B1 8023802 release-keys",
+        "min_sdk": "23",
+        "android_version": "12",
+        "version_sdk": "31",
+        "model": "sdk_gphone64_x86_64",
+        "manufacturer": "Google",
+        "brand": "google",
+        "abi": "x86_64",
+        "locale": "en-US",
+        "pixel_density": 420,
+        "screen_size": "1080x2400"
+    }
+}

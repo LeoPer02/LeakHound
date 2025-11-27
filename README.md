@@ -1,3 +1,4 @@
 # 🚧 Repository Cleanup in Progress
 
-This project is currently undergoing a **code cleanup and desensitization**. 
+This project is currently undergoing a **cleanup and desensitization**.
+
